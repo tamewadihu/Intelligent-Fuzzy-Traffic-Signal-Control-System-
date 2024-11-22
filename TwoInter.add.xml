@@ -1,0 +1,26 @@
+<additional>
+    <laneAreaDetector id="detector0" lane="E3_0" pos="0" length="63.76" period="300.00" file="detector_output.xml" freindlyPos="1"/>
+	<laneAreaDetector id="detector1" lane="E3_1" pos="0" length="63.76" period="300.00" file="detector_output.xml" freindlyPos="1"/>
+	<laneAreaDetector id="detector2" lane="E3_2" pos="0" length="63.76" period="300.00" file="detector_output.xml" freindlyPos="1"/>
+	<laneAreaDetector id="detector3" lanes="-E0_0" pos="0" length="97.70" period="300.00" file="detector_output.xml" freindlyPos="1"/>
+	<laneAreaDetector id="detector4" lanes="-E0_1" pos="0" length="97.70" period="300.00" file="detector_output.xml" freindlyPos="1"/>
+	<laneAreaDetector id="detector5" lanes="-E0_2" pos="0" length="97.70" period="300.00" file="detector_output.xml" freindlyPos="1"/>
+	<laneAreaDetector id="detector6" lanes="E1_0" pos="0" length="50.13" period="300.00" file="detector_output.xml" freindlyPos="1"/>
+	<laneAreaDetector id="detector7" lanes="E1_1" pos="0" length="50.13" period="300.00" file="detector_output.xml" freindlyPos="1"/>
+	<laneAreaDetector id="detector8" lanes="E1_2" pos="0" length="50.13" period="300.00" file="detector_output.xml" freindlyPos="1"/>
+    <laneAreaDetector id="detector9" lane="E4_0" pos="0" length="46.72" period="300.00" file="detector_output.xml" freindlyPos="1"/>
+	<laneAreaDetector id="detector10" lane="E4_1" pos="0" length="46.72" period="300.00" file="detector_output.xml" freindlyPos="1"/>
+	<laneAreaDetector id="detector11" lane="E4_2" pos="0" length="46.72" period="300.00" file="detector_output.xml"  freindlyPos="1"/>
+	<laneAreaDetector id="detector12" lane="E0_0" pos="0" length="97.70" period="300.00" file="detector_output.xml" freindlyPos="1"/>
+	<laneAreaDetector id="detector13" lane="E0_1" pos="0" length="97.70" period="300.00" file="detector_output.xml" freindlyPos="1"/>
+	<laneAreaDetector id="detector14" lane="E0_2" pos="0" length="97.70" period="300.00" file="detector_output.xml" freindlyPos="1"/>
+	<laneAreaDetector id="detector15" lanes="E6_0" pos="0" length="72.63" period="300.00" file="detector_output.xml" freindlyPos="1"/>
+	<laneAreaDetector id="detector16" lanes="E6_1" pos="0" length="72.63" period="300.00" file="detector_output.xml" freindlyPos="1"/>
+	<laneAreaDetector id="detector17" lanes="E6_2" pos="0" length="72.63" period="300.00" file="detector_output.xml" freindlyPos="1"/>
+	<laneAreaDetector id="detector18" lanes="E7_0" pos="0" length="47.48" period="300.00" file="detector_output.xml" freindlyPos="1"/>
+	<laneAreaDetector id="detector19" lanes="E7_1" pos="0" length="47.48" period="300.00" file="detector_output.xml" freindlyPos="1"/>
+	<laneAreaDetector id="detector20" lanes="E7_2" pos="0" length="47.48" period="300.00" file="detector_output.xml" freindlyPos="1"/>
+    <laneAreaDetector id="detector21" lane="E5_0" pos="0" length="44.59" period="300.00" file="detector_output.xml" freindlyPos="1"/>
+	<laneAreaDetector id="detector22" lane="E5_1" pos="0" length="44.59" period="300.00" file="detector_output.xml" freindlyPos="1"/>
+	<laneAreaDetector id="detector23" lane="E5_2" pos="0" length="44.59" period="300.00" file="detector_output.xml"  freindlyPos="1"/>
+</additional>
