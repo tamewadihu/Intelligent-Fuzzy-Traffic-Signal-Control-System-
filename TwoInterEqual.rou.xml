@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes>
+  <vType accel="0.8" decel="4.5" length="5.0" minGap="2.5" maxSpeed="50.0" sigma="0.5" vClass="private" id="private_car" />
+  <vType accel="2.0" decel="6.0" length="7.5" minGap="2.5" maxSpeed="40.0" sigma="0.5" vClass="bus" id="danfo" />
+  <vType accel="3.0" decel="6.0" length="5.0" minGap="2.5" maxSpeed="50.0" sigma="0.5" vClass="truck" id="truck" />
+  <vType accel="2.0" decel="6.0" length="7.5" minGap="2.5" maxSpeed="60.0" sigma="0.5" vClass="emergency" id="emergency" color="1,0,0" />
+  
+  <!--  ALL ROUTES ON LANE 1 -->
+  <route id="route01" edges="E3 E0 -E6"/>
+  <route id="route02" edges="E6 -E0 -E3"/>
+  <route id="route03" edges="E6 -E0 -E1"/>
+  <route id="route04" edges="E6 -E0 -E4"/>
+  <route id="route05" edges="E1 -E4"/>
+  <route id="route06" edges="E4 -E1"/>
+  <route id="route07" edges="E7 -E5"/>
+  <route id="route08" edges="E5 -E7"/>
+  <route id="route09" edges="E3 -E4"/>
+  <route id="route10" edges="E3 -E1"/>
+  <route id="route11" edges="E3 E0 -E6"/>
+  <route id="route12" edges="E3 E0 -E7"/>
+  <route id="route13" edges="E3 E0 -E5"/>
+  <route id="route14" edges="E1 -E3"/>
+  <route id="route15" edges="E1 E0 -E6"/>
+  <route id="route16" edges="E1 E0 -E7"/>
+  <route id="route17" edges="E1 E0 -E5"/>
+  <route id="route18" edges="E4 E0 -E6"/>
+  <route id="route19" edges="E4 E0 -E7"/>
+  <route id="route20" edges="E4 E0 -E5"/>
+  <route id="route21" edges="E4 -E3"/>
+  <route id="route22" edges="E6 -E7"/>
+  <route id="route23" edges="E6 -E5"/>
+  <route id="route24" edges="E5 -E6"/>
+  <route id="route25" edges="E5 -E0 -E1"/>
+  <route id="route26" edges="E5 -E0 -E3"/>
+  <route id="route27" edges="E5 -E0 -E4"/>
+  <route id="route28" edges="E7 -E0 -E3"/>
+  <route id="route29" edges="E7 -E0 -E1"/>
+  <route id="route30" edges="E7 -E0 -E4"/>
+  <route id="ROUTE31" edges="E7 -E6"/>
+  
+    <!-- ALL VEHICLES ON ROUTE1 -->
+ <flow id="car-route1" number="1000" begin="0" probability="0.45" type="private_car">
+    <route edges="E3 E0 -E6" />
+  </flow>
+  <flow id="bus-route1" number="100" begin="0" probability="0.2" type="danfo">
+      <route edges="E3 E0 -E6" />
+  </flow>
+  <flow id="truck-route1" number="50" begin="0" probability="0.02" type="truck">
+      <route edges="E3 E0 -E6"/>
+  </flow>
+  <flow id="emergency-route1" number="2" begin="0" probability="0.01" type="emergency">
+      <route edges="E3 E0 -E6"/>
+  </flow>
+  
+  <!-- ALL VEHICLES ON ROUTE2 -->
+ <flow id="car-route2" number="1000" begin="0" probability="0.45" type="private_car">
+    <route edges="E6 -E0 -E3"/>
+  </flow>
+  <flow id="bus-route2" number="100" begin="0" probability="0.2" type="danfo">
+      <route edges="E6 -E0 -E3" />
+  </flow>
+  <flow id="truck-route2" number="50" begin="0" probability="0.02" type="truck">
+      <route edges="E6 -E0 -E3"/>
+  </flow>
+  <flow id="emergency-route2" number="2" begin="0" probability="0.01" type="emergency">
+      <route edges="E6 -E0 -E3"/>
+  </flow>
+
+  <!-- ALL VEHICLES ON ROUTE3 -->
+ <flow id="car-route3" number="1000" begin="0" probability="0.45" type="private_car">
+    <route edges="E6 -E0 -E1"/>
+  </flow>
+  <flow id="bus-route3" number="100" begin="0" probability="0.2" type="danfo">
+      <route edges="E6 -E0 -E1" />
+  </flow>
+  <flow id="truck-route3" number="50" begin="0" probability="0.02" type="truck">
+      <route edges="E6 -E0 -E1"/>
+  </flow>
+  <flow id="emergency-route3" number="2" begin="0" probability="0.01" type="emergency">
+      <route edges="E6 -E0 -E1"/>
+  </flow>
+  
+  <!-- ALL VEHICLES ON ROUTE4 -->
+ <flow id="car-route4" number="1000" begin="0" probability="0.45" type="private_car">
+    <route edges="E6 -E0 -E4"/>
+  </flow>
+  <flow id="bus-route4" number="100" begin="0" probability="0.2" type="danfo">
+      <route edges="E6 -E0 -E4" />
+  </flow>
+ <flow id="truck-route4" number="50" begin="0" probability="0.02" type="truck">
+      <route edges="E6 -E0 -E4"/>
+  </flow>
+ <flow id="emergency-route4" number="2" begin="0" probability="0.01" type="emergency">
+      <route edges="E6 -E0 -E4"/>
+  </flow>
+  
+  <!-- ALL VEHICLES ON ROUTE5 -->
+ <flow id="car-route5" number="1000" begin="0" probability="0.45" type="private_car">
+    <route edges="E1 -E4"/>
+  </flow>
+  <flow id="bus-route5" number="100" begin="0" probability="0.2" type="danfo">
+      <route edges="E1 -E4" />
+  </flow>
+  <flow id="truck-route5" number="50" begin="0" probability="0.02" type="truck">
+      <route edges="E1 -E4"/>
+  </flow>
+  <flow id="emergency-route5" number="2" begin="0" probability="0.01" type="emergency">
+      <route edges="E1 -E4"/>
+  </flow>
+  
+  <!-- ALL VEHICLES ON ROUTE6 -->
+ <flow id="car-route6" number="1000" begin="0" probability="0.45" type="private_car">
+    <route edges="E4 -E1"/>
+  </flow>
+  <flow id="bus-route6" number="100" begin="0" probability="0.2" type="danfo">
+      <route edges="E4 -E1" />
+  </flow>
+  <flow id="truck-route6" number="50" begin="0" probability="0.02" type="truck">
+      <route edges="E4 -E1"/>
+  </flow>
+  <flow id="emergency-route6" number="2" begin="0" probability="0.01" type="emergency">
+      <route edges="E4 -E1"/>
+  </flow>
+ 
+  <!-- ALL VEHICLES ON ROUTE7 -->
+ <flow id="car-route7" number="1000" begin="0" probability="0.45" type="private_car">
+    <route edges="E7 -E5"/>
+  </flow>
+  <flow id="bus-route7" number="100" begin="0" probability="0.2" type="danfo">
+      <route edges="E7 -E5" />
+  </flow>
+  <flow id="truck-route7" number="50" begin="0" probability="0.02" type="truck">
+      <route edges="E7 -E5"/>
+  </flow>
+  <flow id="emergency-route7" number="2" begin="0" probability="0.01" type="emergency">
+      <route edges="E7 -E5"/>
+  </flow>
+  
+   <!-- ALL VEHICLES ON ROUTE8 -->
+ <flow id="car-route8" number="1000" begin="0" probability="0.45" type="private_car">
+    <route edges="E5 -E7"/>
+  </flow>
+  <flow id="bus-route8" number="100" begin="0" probability="0.2" type="danfo">
+      <route edges="E5 -E7" />
+  </flow>
+  <flow id="truck-route8" number="50" begin="0" probability="0.02" type="truck">
+      <route edges="E5 -E7"/>
+  </flow>
+  <flow id="emergency-route8" number="2" begin="0" probability="0.01" type="emergency">
+      <route edges="E5 -E7"/>
+  </flow>
+  
+  <!-- ALL VEHICLES ON ROUTE9 -->
+ <flow id="car-route9" number="1000" begin="0" probability="0.45" type="private_car">
+    <route edges="E3 -E4"/>
+  </flow>
+  <flow id="bus-route9" number="400" begin="0" probability="0.2" type="danfo">
+      <route edges="E3 -E4" />
+  </flow>
+  <flow id="truck-route9" number="50" begin="0" probability="0.02" type="truck">
+      <route edges="E3 -E4"/>
+  </flow>
+  <flow id="emergency-route9" number="2" begin="0" probability="0.01" type="emergency">
+      <route edges="E3 -E4"/>
+  </flow>
+  
+  <!-- ALL VEHICLES ON ROUTE10 -->
+ <flow id="car-route10" number="1000" begin="0" probability="0.45" type="private_car">
+    <route edges="E3 -E1"/>
+  </flow>
+  <flow id="bus-route10" number="100" begin="0" probability="0.2" type="danfo">
+      <route edges="E3 -E1" />
+  </flow>
+  <flow id="truck-route10" number="50" begin="0" probability="0.02" type="truck">
+      <route edges="E3 -E1"/>
+  </flow>
+  <flow id="emergency-route10" number="2" begin="0" probability="0.01" type="emergency">
+      <route edges="E3 -E1"/>
+  </flow>
+  
+  <!-- ALL VEHICLES ON ROUTE11 -->
+ <flow id="car-route11" number="1000" begin="0" probability="0.45" type="private_car">
+    <route edges="E3 E0 -E6"/>
+  </flow>
+  <flow id="bus-route11" number="100" begin="0" probability="0.2" type="danfo">
+      <route edges="E3 E0 -E6" />
+  </flow>
+  <flow id="truck-route11" number="50" begin="0" probability="0.02" type="truck">
+      <route edges="E3 E0 -E6"/>
+  </flow>
+  <flow id="emergency-route11" number="2" begin="0" probability="0.01" type="emergency">
+      <route edges="E3 E0 -E6"/>
+  </flow>
+  
+  <!-- ALL VEHICLES ON ROUTE12 -->
+ <flow id="car-route12" number="1000" begin="0" probability="0.45" type="private_car">
+    <route edges="E3 E0 -E7"/>
+  </flow>
+  <flow id="bus-route12" number="100" begin="0" probability="0.2" type="danfo">
+      <route edges="E3 E0 -E7" />
+  </flow>
+  <flow id="truck-route12" number="50" begin="0" probability="0.02" type="truck">
+      <route edges="E3 E0 -E7"/>
+  </flow>
+  <flow id="emergency-route12" number="2" begin="0" probability="0.01" type="emergency">
+      <route edges="E3 E0 -E7"/>
+  </flow>
+  
+  <!-- ALL VEHICLES ON ROUTE13 -->
+ <flow id="car-route13" number="1000" begin="0" probability="0.45" type="private_car">
+    <route edges="E3 E0 -E5"/>
+  </flow>
+  <flow id="bus-route13" number="100" begin="0" probability="0.2" type="danfo">
+      <route edges="E3 E0 -E5" />
+  </flow>
+  <flow id="truck-route13" number="50" begin="0" probability="0.02" type="truck">
+      <route edges="E3 E0 -E5"/>
+  </flow>
+  <flow id="emergency-route13" number="2" begin="0" probability="0.01" type="emergency">
+      <route edges="E3 E0 -E5"/>
+  </flow>
+  
+   <!-- ALL VEHICLES ON ROUTE14 -->
+ <flow id="car-route14" number="1000" begin="0" probability="0.45" type="private_car">
+    <route edges="E1 -E3"/>
+  </flow>
+  <flow id="bus-route14" number="100" begin="0" probability="0.2" type="danfo">
+      <route edges="E1 -E3" />
+  </flow>
+  <flow id="truck-route14" number="50" begin="0" probability="0.02" type="truck">
+      <route edges="E1 -E3"/>
+  </flow>
+  <flow id="emergency-route14" number="2" begin="0" probability="0.01" type="emergency">
+      <route edges="E1 -E3"/>
+  </flow>
+  
+   <!-- ALL VEHICLES ON ROUTE15 -->
+ <flow id="car-route15" number="1000" begin="0" probability="0.45" type="private_car">
+    <route edges="E1 E0 -E6"/>
+  </flow>
+  <flow id="bus-route15" number="100" begin="0" probability="0.2" type="danfo">
+      <route edges="E1 E0 -E6" />
+  </flow>
+  <flow id="truck-route15" number="50" begin="0" probability="0.02" type="truck">
+      <route edges="E1 E0 -E6"/>
+  </flow>
+  <flow id="emergency-route15" number="2" begin="0" probability="0.01" type="emergency">
+      <route edges="E1 E0 -E6"/>
+  </flow>
+  
+   <!-- ALL VEHICLES ON ROUTE16 -->
+ <flow id="car-route16" number="1000" begin="0" probability="0.45" type="private_car">
+    <route edges="E1 E0 -E7"/>
+  </flow>
+  <flow id="bus-route16" number="100" begin="0" probability="0.2" type="danfo">
+      <route edges="E1 E0 -E7" />
+  </flow>
+  <flow id="truck-route16" number="50" begin="0" probability="0.02" type="truck">
+      <route edges="E1 E0 -E7"/>
+  </flow>
+  <flow id="emergency-route16" number="2" begin="0" probability="0.01" type="emergency">
+      <route edges="E1 E0 -E7"/>
+  </flow>
+  
+  <!-- ALL VEHICLES ON ROUTE17 -->
+ <flow id="car-route17" number="1000" begin="0" probability="0.45" type="private_car">
+    <route edges="E1 E0 -E5"/>
+  </flow>
+  <flow id="bus-route17" number="100" begin="0" probability="0.2" type="danfo">
+      <route edges="E1 E0 -E5" />
+  </flow>
+  <flow id="truck-route17" number="50" begin="0" probability="0.02" type="truck">
+      <route edges="E1 E0 -E5"/>
+  </flow>
+  <flow id="emergency-route17" number="2" begin="0" probability="0.01" type="emergency">
+      <route edges="E1 E0 -E5"/>
+  </flow>
+  
+  <!-- ALL VEHICLES ON ROUTE18 -->
+ <flow id="car-route18" number="1000" begin="0" probability="0.45" type="private_car">
+    <route edges="E4 E0 -E6"/>
+  </flow>
+  <flow id="bus-route18" number="100" begin="0" probability="0.2" type="danfo">
+      <route edges="E4 E0 -E6" />
+  </flow>
+  <flow id="truck-route18" number="50" begin="0" probability="0.02" type="truck">
+      <route edges="E4 E0 -E6"/>
+  </flow>
+  <flow id="emergency-route18" number="2" begin="0" probability="0.01" type="emergency">
+      <route edges="E4 E0 -E6"/>
+  </flow>
+  
+  <!-- ALL VEHICLES ON ROUTE19 -->
+ <flow id="car-route19" number="1000" begin="0" probability="0.45" type="private_car">
+    <route edges="E4 E0 -E7"/>
+  </flow>
+  <flow id="bus-route19" number="100" begin="0" probability="0.2" type="danfo">
+      <route edges="E4 E0 -E7" />
+  </flow>
+  <flow id="truck-route19" number="50" begin="0" probability="0.02" type="truck">
+      <route edges="E4 E0 -E7"/>
+  </flow>
+  <flow id="emergency-route19" number="2" begin="0" probability="0.01" type="emergency">
+      <route edges="E4 E0 -E7"/>
+  </flow>
+  
+  <!-- ALL VEHICLES ON ROUTE20 -->
+ <flow id="car-route20" number="1000" begin="0" probability="0.45" type="private_car">
+    <route edges="E4 E0 -E5"/>
+  </flow>
+  <flow id="bus-route20" number="100" begin="0" probability="0.2" type="danfo">
+      <route edges="E4 E0 -E5" />
+  </flow>
+  <flow id="truck-route20" number="50" begin="0" probability="0.02" type="truck">
+      <route edges="E4 E0 -E5"/>
+  </flow>
+  <flow id="emergency-route20" number="2" begin="0" probability="0.01" type="emergency">
+      <route edges="E4 E0 -E5"/>
+  </flow>
+  
+  <!-- ALL VEHICLES ON ROUTE21 -->
+ <flow id="car-route21" number="1000" begin="0" probability="0.45" type="private_car">
+    <route edges="E4 -E3"/>
+  </flow>
+  <flow id="bus-route21" number="100" begin="0" probability="0.2" type="danfo">
+      <route edges="E4 -E3" />
+  </flow>
+  <flow id="truck-route21" number="50" begin="0" probability="0.02" type="truck">
+      <route edges="E4 -E3"/>
+  </flow>
+  <flow id="emergency-route21" number="2" begin="0" probability="0.01" type="emergency">
+      <route edges="E4 -E3"/>
+  </flow>
+  
+  <!-- ALL VEHICLES ON ROUTE22 -->
+ <flow id="car-route22" number="1000" begin="0" probability="0.45" type="private_car">
+    <route edges="E6 -E7"/>
+  </flow>
+  <flow id="bus-route22" number="100" begin="0" probability="0.2" type="danfo">
+      <route edges="E6 -E7" />
+  </flow>
+  <flow id="truck-route22" number="50" begin="0" probability="0.02" type="truck">
+      <route edges="E6 -E7"/>
+  </flow>
+  <flow id="emergency-route22" number="2" begin="0" probability="0.01" type="emergency">
+      <route edges="E6 -E7"/>
+  </flow>
+  
+   <!-- ALL VEHICLES ON ROUTE23 -->
+ <flow id="car-route23" number="1000" begin="0" probability="0.45" type="private_car">
+    <route edges="E6 -E5"/>
+  </flow>
+  <flow id="bus-route23" number="100" begin="0" probability="0.2" type="danfo">
+      <route edges="E6 -E5" />
+  </flow>
+  <flow id="truck-route23" number="50" begin="0" probability="0.02" type="truck">
+      <route edges="E6 -E5"/>
+  </flow>
+  <flow id="emergency-route23" number="2" begin="0" probability="0.01" type="emergency">
+      <route edges="E6 -E5"/>
+  </flow>
+  
+  <!-- ALL VEHICLES ON ROUTE24 -->
+ <flow id="car-route24" number="1000" begin="0" probability="0.45" type="private_car">
+    <route edges="E5 -E6"/>
+  </flow>
+  <flow id="bus-route24" number="100" begin="0" probability="0.2" type="danfo">
+      <route edges="E5 -E6" />
+  </flow>
+  <flow id="truck-route24" number="50" begin="0" probability="0.02" type="truck">
+      <route edges="E5 -E6"/>
+  </flow>
+  <flow id="emergency-route24" number="2" begin="0" probability="0.01" type="emergency">
+      <route edges="E5 -E6"/>
+  </flow>
+  
+  <!-- ALL VEHICLES ON ROUTE25 -->
+ <flow id="car-route25" number="1000" begin="0" probability="0.45" type="private_car">
+    <route edges="E5 -E0 -E1"/>
+  </flow>
+  <flow id="bus-route25" number="100" begin="0" probability="0.2" type="danfo">
+      <route edges="E5 -E0 -E1" />
+  </flow>
+  <flow id="truck-route25" number="50" begin="0" probability="0.02" type="truck">
+      <route edges="E5 -E0 -E1"/>
+  </flow>
+  <flow id="emergency-route25" number="2" begin="0" probability="0.01" type="emergency">
+      <route edges="E5 -E0 -E1"/>
+  </flow>
+  
+  <!-- ALL VEHICLES ON ROUTE26 -->
+ <flow id="car-route26" number="1000" begin="0" probability="0.45" type="private_car">
+    <route edges="E5 -E0 -E3"/>
+  </flow>
+  <flow id="bus-route26" number="100" begin="0" probability="0.2" type="danfo">
+      <route edges="E5 -E0 -E3" />
+  </flow>
+  <flow id="truck-route26" number="50" begin="0" probability="0.02" type="truck">
+      <route edges="E5 -E0 -E3"/>
+  </flow>
+  <flow id="emergency-route26" number="2" begin="0" probability="0.01" type="emergency">
+      <route edges="E5 -E0 -E3"/>
+  </flow>
+  
+  <!-- ALL VEHICLES ON ROUTE27 -->
+ <flow id="car-route27" number="1000" begin="0" probability="0.45" type="private_car">
+    <route edges="E5 -E0 -E4"/>
+  </flow>
+  <flow id="bus-route27" number="100" begin="0" probability="0.2" type="danfo">
+      <route edges="E5 -E0 -E4" />
+  </flow>
+  <flow id="truck-route27" number="50" begin="0" probability="0.02" type="truck">
+      <route edges="E5 -E0 -E4"/>
+  </flow>
+  <flow id="emergency-route27" number="2" begin="0" probability="0.01" type="emergency">
+      <route edges="E5 -E0 -E4"/>
+  </flow>
+  
+  <!-- ALL VEHICLES ON ROUTE28 -->
+ <flow id="car-route28" number="1000" begin="0" probability="0.45" type="private_car">
+    <route edges="E7 -E0 -E3"/>
+  </flow>
+  <flow id="bus-route28" number="100" begin="0" probability="0.2" type="danfo">
+      <route edges="E7 -E0 -E3" />
+  </flow>
+  <flow id="truck-route28" number="50" begin="0" probability="0.02" type="truck">
+      <route edges="E7 -E0 -E3"/>
+  </flow>
+  <flow id="emergency-route28" number="2" begin="0" probability="0.01" type="emergency">
+      <route edges="E7 -E0 -E3"/>
+  </flow>
+  
+   <!-- ALL VEHICLES ON ROUTE29 -->
+ <flow id="car-route29" number="1000" begin="0" probability="0.45" type="private_car">
+    <route edges="E7 -E0 -E1"/>
+  </flow>
+  <flow id="bus-route29" number="100" begin="0" probability="0.2" type="danfo">
+      <route edges="E7 -E0 -E1" />
+  </flow>
+  <flow id="truck-route29" number="50" begin="0" probability="0.02" type="truck">
+      <route edges="E7 -E0 -E1"/>
+  </flow>
+  <flow id="emergency-route29" number="2" begin="0" probability="0.01" type="emergency">
+      <route edges="E7 -E0 -E1"/>
+  </flow>
+  
+   <!-- ALL VEHICLES ON ROUTE30 -->
+ <flow id="car-route30" number="1000" begin="0" probability="0.45" type="private_car">
+    <route edges="E7 -E0 -E4"/>
+  </flow>
+  <flow id="bus-route30" number="100" begin="0" probability="0.2" type="danfo">
+      <route edges="E7 -E0 -E4" />
+  </flow>
+  <flow id="truck-route30" number="50" begin="0" probability="0.02" type="truck">
+      <route edges="E7 -E0 -E4"/>
+  </flow>
+  <flow id="emergency-route30" number="2" begin="0" probability="0.01" type="emergency">
+      <route edges="E7 -E0 -E4"/>
+  </flow>
+  
+   <!-- ALL VEHICLES ON ROUTE31 -->
+ <flow id="car-route31" number="1000" begin="0" probability="0.45" type="private_car">
+    <route edges="E7 -E6"/>
+  </flow>
+  <flow id="bus-route31" number="100" begin="0" probability="0.2" type="danfo">
+      <route edges="E7 -E6" />
+  </flow>
+  <flow id="truck-route31" number="50" begin="0" probability="0.02" type="truck">
+      <route edges="E7 -E6"/>
+  </flow>
+  <flow id="emergency-route31" number="2" begin="0" probability="0.01" type="emergency">
+      <route edges="E7 -E6"/>
+  </flow>
+</routes>
